@@ -120,6 +120,9 @@ export default function App() {
             <p style={{ textAlign: "left", paddingLeft: "80px" }}>HTML</p>
           </FloatingElement>
           <FloatingElement>
+            <p style={{ textAlign: "left", paddingLeft: "80px" }}>Git</p>
+          </FloatingElement>
+          <FloatingElement>
             <p style={{ textAlign: "left", paddingLeft: "90px" }}>CSS</p>
           </FloatingElement>
         </div>
