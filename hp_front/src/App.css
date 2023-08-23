@@ -1,0 +1,67 @@
+body {
+  background-color: beige;
+  margin: 0; /* Poista marginaali body-elementistä */
+  padding: 0; /* Lisää nollapadding body-elementille */
+  box-sizing: border-box; /* Säilytä marginaali ja padding sisämittoina */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; /* Täyttää koko näkymän korkeuden */
+}
+
+.App-header {
+  text-align: center;
+  font-family: "input-mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+  font-size: xxx-large;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar p {
+  margin-top: 50px;
+  margin-right: 50px;
+  font-family: "input-mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.marketing-stack p,
+.code-stack p,
+.email p {
+  font-family: "input-mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+  margin: 0;
+}
+
+.floating-element {
+  position: absolute;
+}
+
+.floating-p {
+  font-family: "input-mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+  text-align: right;
+  margin-right: 0;
+}
+
+.email {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f39c12;
+  padding: 10px;
+  font-family: "input-mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
