@@ -12,7 +12,7 @@ Follow these steps to get the project up and running on your local machine.
    git clone <repository_url>
    ```
 
-2. **Navigate to the Root Directory**: Move into the project's root directory.
+2. **Navigate to the Root Directory**: Move into "hp_front".
 
    ```bash
    cd <project_directory>
