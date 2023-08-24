@@ -1,6 +1,18 @@
-# Mikko Terho Homepage
+# Welcome to My Web Development Playground
 
-Welcome to Mikko Terho's simple homepage dedicated to testing physics!
+In this repository, I'm evolving a collection of web pages with diverse functionalities – all for the joy of it and to enhance my learning experience.
+
+## About This Project
+
+This project serves as my personal sandbox for experimenting with various web development concepts. I'm creating a range of web pages, each showcasing different features and functionalities. The goal is to explore, learn, and have fun while building and enhancing my web development skills.
+
+## Why This Repository?
+
+- **Learning by Doing**: By actively developing these web pages, I'm gaining hands-on experience that complements theoretical knowledge.
+
+- **Diverse Functionalities**: Each web page might focus on different aspects, such as interactivity, animations, responsive design, or integration of APIs.
+
+- **Creative Exploration**: I'm treating this repository as a creative canvas where I can explore new ideas and push the boundaries of what I can achieve with web technologies.
 
 ## Getting Started
 
@@ -12,7 +24,7 @@ Follow these steps to get the project up and running on your local machine.
    git clone <repository_url>
    ```
 
-2. **Navigate to the Root Directory**: Move into "hp_front".
+2. **Navigate to the Root Directory**: Move into "hp_front" or etc..<project name>
 
    ```bash
    cd <project_directory>
