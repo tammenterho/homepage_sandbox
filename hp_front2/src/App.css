@@ -6,24 +6,41 @@ body {
   position: absolute;
   top: 35%;
   left: 50%;
+  font-size: xxx-large;
   transform: translate(-50%, -50%);
   font-family: "FreeMono", monospace;
   font-weight: 300;
 }
 .slogan {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 35%;
   font-family: "FreeMono", monospace;
-  font-weight: 100;
+  font-size: larger;
+  text-align: center;
+}
+@media (max-width: 1400px) {
+  .slogan {
+    width: 80%; /* Pienennä leveys */
+    font-size: small; /* Pienennä fonttikokoa */
+  }
+  .otsikko {
+    width: 200%; /* Pienennä leveys */
+    font-size: xx-large; /* Pienennä fonttikokoa */
+  }
+  .nav p {
+    width: 200%; /* Pienennä leveys */
+    font-size: large; /* Pienennä fonttikokoa */
+    top: 20%;
+  }
 }
 
 .nav {
   text-align: right;
   position: absolute;
-  top: 50%;
+  top: 35%;
   right: 16px;
   display: flex;
   margin-right: 20px;
