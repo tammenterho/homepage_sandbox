@@ -9,15 +9,16 @@ export default class SimpleSlider extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      speed: 500,
-      slidesToShow: 2,
+      speed: 900,
+      slidesToShow: 3,
       slidesToScroll: 1,
+      centerMode: true, // Lisää tämä
+      centerPadding: "0px", // Voit säätää tätä tarpeen mukaan
     };
     return (
-      <div>
-        <h2> Works</h2>
+      <div className="works">
         <Slider {...settings}>
-          <div className="works">
+          <div>
             <h3>Client Case 1: WhimsicalWares E-Commerce</h3>
             <div className="clientcase case1">
               <img
@@ -71,7 +72,8 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <h3>Client Case 4: BuzzBites Café</h3>
+            <h3>Client Case 4: BuzzBites Café </h3>
+            <br></br>
             <div className="clientcase case4">
               <img
                 src={require("./mememasters.png")}

@@ -25,7 +25,9 @@ function App() {
           </p>
         </div>
       </div>
-      <div className="works"></div>
+      <div>
+        <h2 className="works-header"> Works</h2>
+      </div>
       <SimpleSlider />
     </div>
   );
