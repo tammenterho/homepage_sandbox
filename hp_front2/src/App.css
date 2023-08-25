@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(267, 200, 159, 255);
+  background-color: rgb(219, 243, 221);
 }
 
 .header {
@@ -58,15 +58,20 @@ img {
   width: auto;
   margin: 0 auto;
 }
+.clientcase img {
+  filter: drop-shadow(20px 15px 15px #1e1e39);
+  margin-bottom: 40px;
+}
 
 .works-header {
   font-family: "FreeMono", monospace;
-  font-weight: 300;
+  font-weight: 600;
   width: 100%; /* Muuta leveys 100% */
   text-align: center; /* keskitä vaakasuunnassa */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
 }
 
 .works h3 {
@@ -79,19 +84,33 @@ img {
 .clientcase {
   width: 300px;
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 .carousel {
   width: 90%;
-  margin-left: 4%;
+  margin-left: 5%;
 }
 
 .clientcase p {
   font-family: "FreeMono", monospace;
   font-weight: 300;
   text-align: center;
-  position: absolute;
+  position: relative;
   width: 100%;
+}
+
+.aboutus h2 {
+  margin-top: 7%;
+  font-family: "FreeMono", monospace;
+  font-weight: 600;
+  text-align: center; /* näin keskitetään */
+
+  width: auto;
+}
+.contact h2 {
+  margin-top: 7%;
+  font-family: "FreeMono", monospace;
+  font-weight: 600;
+  text-align: center; /* näin keskitetään */
+  width: auto;
 }
