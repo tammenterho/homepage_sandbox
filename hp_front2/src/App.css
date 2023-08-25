@@ -26,36 +26,6 @@ body {
   font-size: medium;
   text-align: center;
 }
-@media (max-width: 1400px) {
-  .slogan {
-    width: 80%; /* Pienennä leveys */
-    font-size: medium; /* Pienennä fonttikokoa */
-  }
-  .otsikko {
-    width: 200%; /* Pienennä leveys */
-    font-size: xx-large; /* Pienennä fonttikokoa */
-  }
-  .nav p {
-    width: 200%; /* Pienennä leveys */
-    font-size: large; /* Pienennä fonttikokoa */
-    top: 20%;
-  }
-}
-@media (max-width: 1000px) {
-  .slogan {
-    width: 80%; /* Pienennä leveys */
-    font-size: small; /* Pienennä fonttikokoa */
-  }
-  .otsikko {
-    width: 200%; /* Pienennä leveys */
-    font-size: larger; /* Pienennä fonttikokoa */
-  }
-  .nav p {
-    width: 200%; /* Pienennä leveys */
-    font-size: medium; /* Pienennä fonttikokoa */
-    top: 20%;
-  }
-}
 
 .nav {
   text-align: right;
@@ -106,13 +76,16 @@ img {
   text-align: center; /* näin keskitetään */
 }
 
-.works h2 {
-}
 .clientcase {
   width: 300px;
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.carousel {
+  width: 90%;
+  margin-left: 4%;
 }
 
 .clientcase p {
