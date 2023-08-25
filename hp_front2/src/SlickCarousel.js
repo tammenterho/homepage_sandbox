@@ -4,23 +4,24 @@ import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default class SimpleSlider extends Component {
+export default class LazyLoad extends Component {
   render() {
     const settings = {
       dots: true,
+      lazyLoad: true,
       infinite: true,
-      speed: 900,
-      slidesToShow: 3,
+      speed: 500,
+      slidesToShow: 2,
       slidesToScroll: 1,
-      centerMode: true, // Lisää tämä
-      centerPadding: "0px", // Voit säätää tätä tarpeen mukaan
+      initialSlide: 2,
     };
+
     return (
       <div className="works">
         <Slider {...settings}>
           <div>
-            <h3>Client Case 1: WhimsicalWares E-Commerce</h3>
             <div className="clientcase case1">
+              <h3>Client Case 1: WhimsicalWares E-Commerce</h3>
               <img
                 src={require("./whimsicalwares.png")}
                 alt="cheeky sorbet logo"
@@ -37,8 +38,8 @@ export default class SimpleSlider extends Component {
           </div>
           <div>
             <div>
-              <h3>Client Case 2: MemeMasters Gaming</h3>
               <div className="clientcase case2">
+                <h3>Client Case 2: MemeMasters Gaming</h3>
                 <img
                   src={require("./mememasters.png")}
                   alt="cheeky sorbet logo"
@@ -55,8 +56,8 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <h3>Client Case 3: FitFunnies Fitness</h3>
             <div className="clientcase case3">
+              <h3>Client Case 3: FitFunnies Fitness</h3>
               <img
                 src={require("./mememasters.png")}
                 alt="cheeky sorbet logo"
@@ -72,9 +73,9 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <h3>Client Case 4: BuzzBites Café </h3>
-            <br></br>
             <div className="clientcase case4">
+              <h3>Client Case 4: BuzzBites Café </h3>
+              <br></br>
               <img
                 src={require("./mememasters.png")}
                 alt="cheeky sorbet logo"

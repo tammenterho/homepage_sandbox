@@ -28,7 +28,9 @@ function App() {
       <div>
         <h2 className="works-header"> Works</h2>
       </div>
-      <SimpleSlider />
+      <div className="carousel">
+        <SimpleSlider />
+      </div>
     </div>
   );
 }

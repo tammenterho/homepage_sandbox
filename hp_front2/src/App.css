@@ -83,8 +83,10 @@ img {
   max-height: 100%;
 }
 
-.works {
-  margin-left: 7%;
+.clientcase {
+  height: calc(50vh - 100px);
+  width: auto;
+  margin: 0 auto;
 }
 
 .works-header {
