@@ -36,11 +36,26 @@ body {
     top: 20%;
   }
 }
+@media (max-width: 1000px) {
+  .slogan {
+    width: 80%; /* Pienennä leveys */
+    font-size: small; /* Pienennä fonttikokoa */
+  }
+  .otsikko {
+    width: 200%; /* Pienennä leveys */
+    font-size: larger; /* Pienennä fonttikokoa */
+  }
+  .nav p {
+    width: 200%; /* Pienennä leveys */
+    font-size: medium; /* Pienennä fonttikokoa */
+    top: 20%;
+  }
+}
 
 .nav {
   text-align: right;
   position: absolute;
-  top: 35%;
+  top: 32%;
   right: 16px;
   display: flex;
   margin-right: 20px;
@@ -92,8 +107,9 @@ img {
 .works h3 {
   font-family: "FreeMono", monospace;
   font-weight: 300;
-  text-align: center;
-  width: 300px;
+  width: 250px;
+  text-align: center; /* näin keskitetään */
+  margin: 0 auto; /* näin keskitetään */
 }
 
 .clientcase {
