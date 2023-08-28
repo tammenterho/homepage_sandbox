@@ -51,23 +51,37 @@ function App() {
             alt="cheeky sorbet logo"
           />
         </div>
-        <div className="mikael">
-          <h3>Mikael Nautavaara</h3>
-          <h4>Visual Artisan</h4>
-          <p>
-            Mikael crafts visual masterpieces that elevate the brands of Cheeky
-            Social Sorbet's clients to new heights. His ability to combine
-            colors, shapes, and narratives is unparalleled.
-          </p>
+        <div className="mikaelcont">
+          <img
+            className="mikaelnaama"
+            src={require("./mikael_naama.png")}
+            alt="cheeky sorbet logo"
+          />
+          <div className="mikael">
+            <h3>Mikael Nautavaara</h3>
+            <h4>Visual Artisan</h4>
+            <p>
+              Mikael crafts visual masterpieces that elevate the brands of
+              Cheeky Social Sorbet's clients to new heights. His ability to
+              combine colors, shapes, and narratives is unparalleled.
+            </p>
+          </div>
         </div>
-        <div className="sylvi">
-          <h3>Sylvi-Petra Lehti-Kokkeli</h3>
-          <h4>Social Alchemist</h4>
-          <p>
-            Sylvi is a social media magician conjuring enchanting campaigns at
-            Cheeky Social Sorbet. Her deep understanding of algorithms and knack
-            for predicting trends make her a true social media expert.
-          </p>
+        <div className="sylvicont">
+          <div className="sylvi">
+            <h3>Sylvi-Petra Lehti-Kokkeli</h3>
+            <h4>Social Alchemist</h4>
+            <p>
+              Sylvi is a social media magician conjuring enchanting campaigns at
+              Cheeky Social Sorbet. Her deep understanding of algorithms and
+              knack for predicting trends make her a true social media expert.
+            </p>
+          </div>
+          <img
+            className="sylvinaama"
+            src={require("./sylvi_naama.png")}
+            alt="cheeky sorbet logo"
+          />
         </div>
       </div>
       <div className="contact">
