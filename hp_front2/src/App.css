@@ -1,41 +1,57 @@
-body {
-  background-color: rgb(219, 243, 221);
-}
-
 .header {
   position: relative;
   text-align: center;
+  height: 700px;
+  background: rgb(251, 251, 251);
+  background: linear-gradient(
+    0deg,
+    rgba(251, 251, 251, 0) 34%,
+    rgba(255, 159, 190, 1) 44%,
+    rgba(246, 106, 151, 1) 66%
+  );
+}
+.materials {
+  background: rgb(162, 241, 190);
+  background: linear-gradient(
+    0deg,
+    rgb(192, 237, 208) 89%,
+    rgba(255, 255, 255, 1) 99%
+  );
 }
 
 .otsikko {
   position: absolute;
-  top: 35%;
+  top: 25%;
   left: 50%;
-  font-size: xxx-large;
+  font-size: 700%;
+  color: aliceblue;
   transform: translate(-50%, -50%);
-  font-family: "FreeMono", monospace;
-  font-weight: 300;
+  font-family: "gelato-luxe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .slogan {
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 45%;
-  font-family: "FreeMono", monospace;
-  font-size: medium;
+  width: 75%;
+  font-family: "noka", sans-serif;
+
+  font-style: normal;
+  font-size: xx-large;
   text-align: center;
 }
 
 .nav {
   text-align: right;
   position: absolute;
-  top: 35%;
+  top: 2%;
   right: 16px;
   display: flex;
   margin-right: 20px;
   color: aliceblue;
-  font-size: large;
+  font-size: x-large;
 }
 
 .nav p {
@@ -88,7 +104,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15%;
+  margin-bottom: 100px;
 }
 
 .works h3 {
