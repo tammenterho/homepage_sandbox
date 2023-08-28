@@ -35,14 +35,21 @@ function App() {
         <h2>About us</h2>
       </div>
       <div className="aboutus-cont">
-        <div>
-          <h3>Ilta Hämähäkkänen</h3>
-          <h4>Creative Visionary</h4>
-          <p>
-            Ilta is the visionary guiding the creative direction at Cheeky
-            Social Sorbet. Her unique perspective and innovative solutions make
-            her an inspiration to the entire team.
-          </p>
+        <div className="iltacont">
+          <div className="ilta">
+            <h3>Ilta Hämähäkkänen</h3>
+            <h4>Creative Visionary</h4>
+            <p>
+              Ilta is the visionary guiding the creative direction at Cheeky
+              Social Sorbet. Her unique perspective and innovative solutions
+              make her an inspiration to the entire team.
+            </p>
+          </div>
+          <img
+            className="iltanaama"
+            src={require("./ilta_naama.png")}
+            alt="cheeky sorbet logo"
+          />
         </div>
         <div className="mikael">
           <h3>Mikael Nautavaara</h3>
@@ -53,7 +60,7 @@ function App() {
             colors, shapes, and narratives is unparalleled.
           </p>
         </div>
-        <div>
+        <div className="sylvi">
           <h3>Sylvi-Petra Lehti-Kokkeli</h3>
           <h4>Social Alchemist</h4>
           <p>

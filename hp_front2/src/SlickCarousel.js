@@ -59,7 +59,7 @@ export default class LazyLoad extends Component {
             <div className="clientcase case3">
               <h3>Client Case 3: FitFunnies Fitness</h3>
               <img
-                src={require("./mememasters.png")}
+                src={require("./acorn-github.png")}
                 alt="cheeky sorbet logo"
               />
               <p>
@@ -76,10 +76,7 @@ export default class LazyLoad extends Component {
             <div className="clientcase case4">
               <h3>Client Case 4: BuzzBites Café </h3>
               <br></br>
-              <img
-                src={require("./mememasters.png")}
-                alt="cheeky sorbet logo"
-              />
+              <img src={require("./lilmac.jpg")} alt="cheeky sorbet logo" />
               <p>
                 To give BuzzBites Café a distinctive online presence, we whipped
                 up a campaign that combined mouthwatering food visuals with

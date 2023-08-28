@@ -30,12 +30,12 @@ body {
 .nav {
   text-align: right;
   position: absolute;
-  top: 32%;
+  top: 35%;
   right: 16px;
   display: flex;
   margin-right: 20px;
   color: aliceblue;
-  font-size: x-large;
+  font-size: large;
 }
 
 .nav p {
@@ -121,9 +121,29 @@ img {
 
 .aboutus-cont {
   font-family: "FreeMono", monospace;
+  display: flex;
+  flex-direction: column;
 }
 
 .mikael {
   text-align: right;
-  right: 10px;
+  margin-left: auto;
+  margin-right: 15px;
+  width: 40%;
+}
+.sylvi,
+.ilta {
+  text-align: left;
+  margin-right: auto;
+  margin-left: 15px;
+  width: 40%;
+}
+
+.iltacont {
+  display: flex;
+}
+
+.iltanaama {
+  width: 400px;
+  margin-right: 36%;
 }
