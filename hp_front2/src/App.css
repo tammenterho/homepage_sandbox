@@ -2,21 +2,26 @@
   position: relative;
   text-align: center;
   height: 700px;
-  background: rgb(251, 251, 251);
+  background: rgb(254, 226, 169);
   background: linear-gradient(
     0deg,
-    rgba(251, 251, 251, 0) 34%,
-    rgba(255, 159, 190, 1) 44%,
+    rgba(254, 226, 169, 1) 12%,
+    rgba(254, 226, 169, 1) 27%,
+    rgba(255, 159, 190, 1) 37%,
     rgba(246, 106, 151, 1) 66%
   );
 }
 .materials {
-  background: rgb(162, 241, 190);
+  background: rgb(246, 106, 151);
   background: linear-gradient(
     0deg,
-    rgb(192, 237, 208) 89%,
-    rgba(255, 255, 255, 1) 99%
+    rgba(246, 106, 151, 1) 28%,
+    rgba(254, 226, 169, 1) 71%
   );
+}
+
+.whole {
+  background: rgb(254, 226, 169);
 }
 
 .otsikko {
@@ -37,8 +42,7 @@
   transform: translate(-50%, -50%);
   width: 75%;
   font-family: "noka", sans-serif;
-
-  font-style: normal;
+  font-style: italic;
   font-size: xx-large;
   text-align: center;
 }
@@ -56,27 +60,26 @@
 
 .nav p {
   margin-right: 20px;
-  font-family: "FreeMono", monospace;
-  font-weight: 300;
+  font-family: "noka", sans-serif;
+  font-style: normal;
   white-space: nowrap; /* pysyy yhdellå rivillä */
 }
 
 img {
   width: auto;
-  height: auto;
   object-fit: contain;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 120%;
+  height: 500px;
 }
 
 .clientcase {
-  height: calc(50vh - 100px);
-  width: auto;
   margin: 0 auto;
+  width: 400px;
+  position: relative;
 }
 .clientcase img {
   filter: drop-shadow(20px 15px 15px #1e1e39);
-  margin-bottom: 40px;
 }
 
 .clientcase img:hover {
@@ -84,34 +87,30 @@ img {
   transform: scale(1.3);
 }
 
-.clientcase {
-  width: 300px;
-  position: relative;
-}
-
 .clientcase p {
-  font-family: "FreeMono", monospace;
-  font-weight: 300;
+  font-family: "noka", sans-serif;
+  font-style: normal;
   text-align: center;
   position: relative;
   width: 100%;
 }
 .works-header {
-  font-family: "FreeMono", monospace;
-  font-weight: 600;
-  width: 100%; /* Muuta leveys 100% */
+  font-family: "noka", sans-serif;
+  font-style: normal;
   text-align: center; /* keskitä vaakasuunnassa */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+  padding-top: 100px;
+  background-color: rgb(254, 226, 169);
 }
 
 .works h3 {
-  font-family: "FreeMono", monospace;
-  font-weight: 300;
-  width: 300px;
+  font-family: "noka", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: x-large;
+  width: 400px;
   text-align: center; /* näin keskitetään */
+  margin: 0 auto;
 }
 
 .carousel {
@@ -121,14 +120,15 @@ img {
 
 .aboutus h2 {
   margin-top: 15%;
-  font-family: "FreeMono", monospace;
-  font-weight: 600;
+  font-family: "noka", sans-serif;
+  font-style: normal;
   text-align: center; /* näin keskitetään */
   width: auto;
 }
 
 .aboutus-cont {
-  font-family: "FreeMono", monospace;
+  font-family: "noka", sans-serif;
+  font-style: normal;
   display: flex;
   flex-direction: column;
 }
@@ -144,15 +144,17 @@ img {
   text-align: left;
   margin-right: auto;
   width: 40%;
+  top: 5%;
 }
 
 .iltacont,
 .mikaelcont,
 .sylvicont {
   display: flex;
-  margin-top: 150px;
+  margin-top: 10%;
   margin-left: 15%;
   margin-right: 15%;
+  font-size: 130%;
 }
 
 .iltanaama,
@@ -161,6 +163,7 @@ img {
   height: 200px;
   margin: 0 auto;
   border-radius: 50%;
+  margin-top: 2%;
 }
 .mikaelnaama {
   width: 200px;
@@ -172,8 +175,8 @@ img {
 
 .contact h2 {
   margin-top: 7%;
-  font-family: "FreeMono", monospace;
-  font-weight: 600;
+  font-family: "noka", sans-serif;
+  font-style: normal;
   text-align: center; /* näin keskitetään */
   width: auto;
 }

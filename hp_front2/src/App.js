@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="whole">
       <div className="App">
         <Helmet>
           <title>My App</title>

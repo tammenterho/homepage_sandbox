@@ -58,6 +58,7 @@ export default class LazyLoad extends Component {
           <div>
             <div className="clientcase case3">
               <h3>Client Case 3: FitFunnies Fitness</h3>
+              <br></br>
               <img
                 src={require("./acorn-github.png")}
                 alt="cheeky sorbet logo"
