@@ -19,14 +19,14 @@ export default function AboutUs() {
         </div>
         <img
           className="iltanaama"
-          src={require("./ilta_naama.png")}
+          src={require("./images/ilta_naama.png")}
           alt="cheeky sorbet logo"
         />
       </div>
       <div className="mikaelcont">
         <img
           className="mikaelnaama"
-          src={require("./mikael_naama.png")}
+          src={require("./images/mikael_naama.png")}
           alt="cheeky sorbet logo"
         />
         <div className="mikael">
@@ -51,7 +51,7 @@ export default function AboutUs() {
         </div>
         <img
           className="sylvinaama"
-          src={require("./sylvi_naama.png")}
+          src={require("./images/sylvi_naama.png")}
           alt="cheeky sorbet logo"
         />
       </div>
