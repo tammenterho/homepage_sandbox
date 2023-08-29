@@ -21,9 +21,6 @@ function App() {
         <div className="carousel">
           <SimpleSlider />
         </div>
-        <div className="aboutus">
-          <h2>About us</h2>
-        </div>
         <AboutUs />
         <div className="contact">
           <h2>Contact</h2>

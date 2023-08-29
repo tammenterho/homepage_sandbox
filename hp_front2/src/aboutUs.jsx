@@ -4,6 +4,9 @@ import "./App.css";
 export default function AboutUs() {
   return (
     <div className="aboutus-cont">
+      <div className="aboutus">
+        <h2>About us</h2>
+      </div>
       <div className="iltacont">
         <div className="ilta">
           <h3>Ilta Hämähäkkänen</h3>
