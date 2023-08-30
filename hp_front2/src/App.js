@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet";
 import "./App.css";
 import AboutUs from "./aboutUs";
 import Header from "./header";
+import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
 
 function App() {
   return (
@@ -62,6 +64,39 @@ function App() {
         <AboutUs />
         <div className="contact">
           <h2>Contact</h2>
+          <div className="contact-input">
+            <div>
+              <TextField
+                className="textfield"
+                required
+                id="outlined-text"
+                label="First name"
+                type="text"
+                InputLabelProps={{
+                  shrink: true,
+                }}
+              />
+              <TextField
+                required
+                id="outlined-text"
+                label="Last name"
+                type="text"
+                InputLabelProps={{
+                  shrink: true,
+                }}
+              />
+              <TextField
+                required
+                id="outlined-number"
+                label="Number"
+                type="number"
+                helperText="Some important text"
+                InputLabelProps={{
+                  shrink: true,
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -7,8 +7,8 @@ export default function Header() {
       <h1 className="otsikko">Cheeky Social Sorbet</h1>
       <div className="nav">
         <p>works</p>
-        <p>contact</p>
         <p>about us</p>
+        <p>contact</p>
       </div>
       <p className="slogan">
         At Cheeky Social Sorbet, we're not your average digital marketing agency
