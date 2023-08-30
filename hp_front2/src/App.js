@@ -5,7 +5,6 @@ import "./App.css";
 import AboutUs from "./aboutUs";
 import Header from "./header";
 import TextField from "@mui/material/TextField";
-import Box from "@mui/material/Box";
 import { Button, Grid } from "@mui/material";
 
 function App() {
@@ -63,7 +62,7 @@ function App() {
           </div>
         </div>
         <AboutUs />
-        <div className="contact">
+        <div className="contact" id="contact">
           <h2>Contact</h2>
           <div className="contact-input">
             <Grid container direction={"column"} spacing={5}>

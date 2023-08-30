@@ -34,17 +34,17 @@ HEADER
   font-style: normal;
 }
 .nav {
-  text-align: right;
   position: absolute;
   top: 2%;
   right: 16px;
   display: flex;
   margin-right: 20px;
-  color: aliceblue;
-  font-size: x-large;
 }
 
-.nav p {
+.nav a {
+  font-size: x-large;
+  text-decoration: none;
+  color: aliceblue;
   margin-right: 20px;
   font-family: "noka", sans-serif;
   font-style: normal;
