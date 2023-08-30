@@ -84,6 +84,13 @@ WORKS SLIDER  //
   );
 }
 
+.materials h2 {
+  font-family: "noka", sans-serif;
+  font-style: normal;
+  text-align: center; /* näin keskitetään */
+  width: auto;
+}
+
 img {
   width: auto;
   object-fit: contain;
@@ -95,7 +102,7 @@ img {
 
 .clientcase {
   margin: 0 auto;
-  width: 400px;
+  width: 300px;
   position: relative;
 }
 .clientcase img {
@@ -136,6 +143,7 @@ img {
 .works {
   width: 90%;
   margin-left: 5%;
+  margin-bottom: 12%;
 }
 
 /* 
@@ -145,9 +153,32 @@ WORKS LOGOS  //
 */
 
 .logocont {
-  height: 600px;
-  background-color: aliceblue;
+  background: rgb(246, 106, 151);
+  background: linear-gradient(
+    0deg,
+    rgb(248, 168, 165) 0%,
+    rgba(255, 255, 255, 1) 4%,
+    rgba(255, 255, 255, 1) 85%,
+    rgb(253, 208, 166) 97%
+  );
   margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.logocont-title {
+  text-align: center;
+}
+
+.logocont img {
+  max-width: 200px;
+  max-height: 100%;
+  height: auto;
+  margin-left: 40px;
+}
+
+.logos {
+  margin-top: 7%;
+  padding-bottom: 40px;
 }
 
 /* 
@@ -158,10 +189,6 @@ ABOUT US  //
 
 .aboutus h2 {
   margin-top: 15%;
-  font-family: "noka", sans-serif;
-  font-style: normal;
-  text-align: center; /* näin keskitetään */
-  width: auto;
 }
 
 .aboutus-cont {
@@ -219,8 +246,4 @@ CONTACT  //
 
 .contact h2 {
   margin-top: 7%;
-  font-family: "noka", sans-serif;
-  font-style: normal;
-  text-align: center; /* näin keskitetään */
-  width: auto;
 }
