@@ -18,6 +18,7 @@ export default class LazyLoad extends Component {
 
     return (
       <div className="works">
+        <h2 className="works-header"> Works</h2>
         <Slider {...settings}>
           <div>
             <div className="clientcase case1">

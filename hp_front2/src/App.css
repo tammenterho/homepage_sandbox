@@ -1,3 +1,13 @@
+.whole {
+  background: rgb(254, 226, 169);
+}
+
+/* 
+HEADER
+
+
+*/
+
 .header {
   position: relative;
   text-align: center;
@@ -11,18 +21,6 @@
     rgba(246, 106, 151, 1) 66%
   );
 }
-.materials {
-  background: rgb(246, 106, 151);
-  background: linear-gradient(
-    0deg,
-    rgba(246, 106, 151, 1) 28%,
-    rgba(254, 226, 169, 1) 71%
-  );
-}
-
-.whole {
-  background: rgb(254, 226, 169);
-}
 
 .otsikko {
   position: absolute;
@@ -35,18 +33,6 @@
   font-weight: 400;
   font-style: normal;
 }
-.slogan {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 75%;
-  font-family: "noka", sans-serif;
-  font-style: italic;
-  font-size: xx-large;
-  text-align: center;
-}
-
 .nav {
   text-align: right;
   position: absolute;
@@ -63,6 +49,39 @@
   font-family: "noka", sans-serif;
   font-style: normal;
   white-space: nowrap; /* pysyy yhdellå rivillä */
+}
+
+/* 
+SLOGAN  // 
+
+
+*/
+
+.slogan {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  font-family: "noka", sans-serif;
+  font-style: italic;
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* 
+WORKS SLIDER  // 
+
+
+*/
+
+.materials {
+  background: rgb(246, 106, 151);
+  background: linear-gradient(
+    0deg,
+    rgba(246, 106, 151, 1) 28%,
+    rgba(254, 226, 169, 1) 71%
+  );
 }
 
 img {
@@ -114,10 +133,28 @@ img {
   margin: 0 auto;
 }
 
-.carousel {
+.works {
   width: 90%;
   margin-left: 5%;
 }
+
+/* 
+WORKS LOGOS  // 
+
+
+*/
+
+.logocont {
+  height: 600px;
+  background-color: aliceblue;
+  margin-top: 40px;
+}
+
+/* 
+ABOUT US  // 
+
+
+*/
 
 .aboutus h2 {
   margin-top: 15%;
@@ -173,6 +210,12 @@ img {
   margin: 0 auto;
   border-radius: 100%;
 }
+
+/* 
+CONTACT  // 
+
+
+*/
 
 .contact h2 {
   margin-top: 7%;

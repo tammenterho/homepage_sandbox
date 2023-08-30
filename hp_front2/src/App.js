@@ -17,9 +17,13 @@ function App() {
         <Header />
       </div>
       <div className="materials">
-        <h2 className="works-header"> Works</h2>
-        <div className="carousel">
-          <SimpleSlider />
+        <SimpleSlider />
+        <div className="logocont">
+          here logos
+          <img
+            src={require("./images/Teknosolutions-logo.png")}
+            alt="cheeky sorbet logo"
+          />
         </div>
         <AboutUs />
         <div className="contact">
