@@ -90,13 +90,16 @@ HAMBURGER  //
   right: 30px;
   text-align: right;
   font-size: x-large;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-links a {
   text-decoration: none;
   color: aliceblue;
   font-family: "noka", sans-serif;
   font-style: normal;
-  width: 100px;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 .nav-links.show {
