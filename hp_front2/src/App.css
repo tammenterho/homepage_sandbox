@@ -135,9 +135,10 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: x-large;
-  width: 400px;
+  width: 300px;
   text-align: center; /* näin keskitetään */
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .works {
@@ -196,6 +197,7 @@ ABOUT US  //
   font-style: normal;
   display: flex;
   flex-direction: column;
+  margin-bottom: 70px;
 }
 
 .mikael {
@@ -255,7 +257,9 @@ CONTACT  //
 }
 
 .contact-input {
-  text-align: center;
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
 }
 
 .textfield {
