@@ -1,9 +1,9 @@
 import React from "react";
-import SimpleSlider from "./SlickCarousel";
+import SimpleSlider from "./components/SlickCarousel";
 import { Helmet } from "react-helmet";
 import "./App.css";
-import AboutUs from "./aboutUs";
-import Header from "./header";
+import AboutUs from "./components/aboutUs";
+import Header from "./components/header";
 import TextField from "@mui/material/TextField";
 import { Button, Grid } from "@mui/material";
 

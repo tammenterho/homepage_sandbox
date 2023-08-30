@@ -1,13 +1,13 @@
 import React from "react";
-import "./App.css";
+import "./../App.css";
 
 export default function AboutUs() {
   return (
-    <div className="aboutus-cont" id="aboutus">
+    <div className="aboutus-cont">
       <div className="aboutus">
         <h2>About us</h2>
       </div>
-      <div className="iltacont">
+      <div className="iltacont" id="aboutus">
         <div className="ilta">
           <h3>Ilta Hämähäkkänen</h3>
           <h4>Creative Visionary</h4>
@@ -19,14 +19,14 @@ export default function AboutUs() {
         </div>
         <img
           className="iltanaama"
-          src={require("./images/ilta_naama.png")}
+          src={require("./../images/ilta_naama.png")}
           alt="cheeky sorbet logo"
         />
       </div>
       <div className="mikaelcont">
         <img
           className="mikaelnaama"
-          src={require("./images/mikael_naama.png")}
+          src={require("./../images/mikael_naama.png")}
           alt="cheeky sorbet logo"
         />
         <div className="mikael">
@@ -51,7 +51,7 @@ export default function AboutUs() {
         </div>
         <img
           className="sylvinaama"
-          src={require("./images/sylvi_naama.png")}
+          src={require("./../images/sylvi_naama.png")}
           alt="cheeky sorbet logo"
         />
       </div>

@@ -1,12 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import "./App.css";
+import "./../App.css";
 
 export default function Header() {
+  const [navVisible, setNavVisible] = useState(false);
+
+  const toggleNav = () => {
+    setNavVisible(!navVisible);
+  };
+
   return (
     <div className="header">
       <h1 className="otsikko">Cheeky Social Sorbet</h1>
       <div className="nav">
+        <Link to="#works">
+          <p>works</p>
+        </Link>
+        <Link to="#aboutus">
+          <p>about us</p>
+        </Link>
+        <Link to="#contact">
+          <p>contact</p>
+        </Link>
+        <div className="hamburger" onClick={toggleNav}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+      </div>
+      <div className={`nav-links ${navVisible ? "show" : ""}`}>
         <Link to="#works">
           <p>works</p>
         </Link>

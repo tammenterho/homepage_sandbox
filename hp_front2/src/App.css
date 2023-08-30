@@ -50,6 +50,58 @@ HEADER
   font-style: normal;
   white-space: nowrap; /* pysyy yhdellå rivillä */
 }
+/* 
+HAMBURGER  // 
+
+*/
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+@media (max-width: 1118px) {
+  .hamburger {
+    display: block;
+  }
+  .nav a {
+    display: none; /* Piilotetaan linkit kun ruutu on pienempi kuin 1118px */
+  }
+
+  .nav-links.show {
+    display: flex; /* Näytetään linkit kun hampurilaisvalikko on avattu */
+  }
+}
+.nav-links {
+  display: none; /* Aluksi piilotetaan linkit */
+  flex-direction: column; /* Asetetaan linkkien suunta pystyksi */
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  text-align: right;
+  font-size: x-large;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "noka", sans-serif;
+  font-style: normal;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.nav-links.show {
+  display: flex; /* Näytetään linkit kun hampurilaisvalikko on avattu */
+}
 
 /* 
 SLOGAN  // 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "./App.css";
+import "./../App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -24,7 +24,7 @@ export default class LazyLoad extends Component {
             <div className="clientcase case1">
               <h3>Client Case 1: WhimsicalWares E-Commerce</h3>
               <img
-                src={require("./images/whimsicalwares.png")}
+                src={require("./../images/whimsicalwares.png")}
                 alt="cheeky sorbet logo"
               />
               <p>
@@ -42,7 +42,7 @@ export default class LazyLoad extends Component {
               <div className="clientcase case2">
                 <h3>Client Case 2: MemeMasters Gaming</h3>
                 <img
-                  src={require("./images/mememasters.png")}
+                  src={require("./../images/mememasters.png")}
                   alt="cheeky sorbet logo"
                 />
                 <p>
@@ -61,7 +61,7 @@ export default class LazyLoad extends Component {
               <h3>Client Case 3: FitFunnies Fitness</h3>
               <br></br>
               <img
-                src={require("./images/acorn-github.png")}
+                src={require("./../images/acorn-github.png")}
                 alt="cheeky sorbet logo"
               />
               <p>
@@ -79,7 +79,7 @@ export default class LazyLoad extends Component {
               <h3>Client Case 4: BuzzBites Café </h3>
               <br></br>
               <img
-                src={require("./images/lilmac.jpg")}
+                src={require("./../images/lilmac.jpg")}
                 alt="cheeky sorbet logo"
               />
               <p>
