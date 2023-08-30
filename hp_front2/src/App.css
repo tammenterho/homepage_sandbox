@@ -82,6 +82,13 @@ HAMBURGER  //
     display: flex; /* Näytetään linkit kun hampurilaisvalikko on avattu */
   }
 }
+
+@media (min-width: 1118px) {
+  .nav-links a {
+    display: none;
+  }
+}
+
 .nav-links {
   display: none; /* Aluksi piilotetaan linkit */
   flex-direction: column; /* Asetetaan linkkien suunta pystyksi */
