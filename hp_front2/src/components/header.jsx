@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <div className="header">
       <h1 className="otsikko">Cheeky Social Sorbet</h1>
-      <div className="nav">
+      <div className="nav" id="nav">
         <Link to="#works">
           <p>works</p>
         </Link>

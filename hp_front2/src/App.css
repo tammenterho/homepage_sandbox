@@ -137,6 +137,12 @@ WORKS SLIDER  //
 
 */
 
+.uparrow {
+  position: fixed;
+  top: 50%;
+  right: 20px; /* Adjust this value to your preference */
+}
+
 .materials {
   background: rgb(246, 106, 151);
   background: linear-gradient(

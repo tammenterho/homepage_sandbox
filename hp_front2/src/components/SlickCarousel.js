@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "./../App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+import { HashLink as Link } from "react-router-hash-link";
 
 export default class LazyLoad extends Component {
   render() {
@@ -19,6 +21,9 @@ export default class LazyLoad extends Component {
     return (
       <div className="works" id="works">
         <h2 className="works-header"> Works</h2>
+        <Link to="#nav">
+          <ArrowCircleUpIcon className="uparrow"></ArrowCircleUpIcon>
+        </Link>
         <Slider {...settings}>
           <div>
             <div className="clientcase case1">
