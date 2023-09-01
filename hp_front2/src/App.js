@@ -6,6 +6,7 @@ import AboutUs from "./components/aboutUs";
 import Header from "./components/header";
 import TextField from "@mui/material/TextField";
 import { Button, Grid } from "@mui/material";
+import MoreClients from "./components/moreClients";
 
 function App() {
   return (
@@ -20,47 +21,7 @@ function App() {
       </div>
       <div className="materials">
         <SimpleSlider />
-        <div className="logocont">
-          <h2 className="clientstitle">More our clients</h2>
-          <div className="logos">
-            <img
-              src={require("./images/Teknosolutions-logo.png")}
-              alt="teknosolutions"
-            />
-            <img src={require("./images/company1.png")} alt="teknosolutions" />
-            <img src={require("./images/company2.png")} alt="teknosolutions" />
-            <img src={require("./images/company3.png")} alt="teknosolutions" />
-            <img src={require("./images/company4.png")} alt="teknosolutions" />
-            <img
-              src={require("./images/Teknosolutions-logo.png")}
-              alt="teknosolutions"
-            />
-            <img
-              src={require("./images/Teknosolutions-logo.png")}
-              alt="teknosolutions"
-            />
-            <img
-              src={require("./images/Teknosolutions-logo.png")}
-              alt="teknosolutions"
-            />
-            <img
-              src={require("./images/Teknosolutions-logo.png")}
-              alt="teknosolutions"
-            />
-            <img
-              src={require("./images/Teknosolutions-logo.png")}
-              alt="teknosolutions"
-            />
-            <img
-              src={require("./images/Teknosolutions-logo.png")}
-              alt="teknosolutions"
-            />
-            <img
-              src={require("./images/Teknosolutions-logo.png")}
-              alt="teknosolutions"
-            />
-          </div>
-        </div>
+        <MoreClients></MoreClients>
         <AboutUs />
         <div className="contact" id="contact">
           <h2>Contact</h2>
