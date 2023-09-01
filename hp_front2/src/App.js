@@ -21,7 +21,7 @@ function App() {
       <div className="materials">
         <SimpleSlider />
         <div className="logocont">
-          <h2>More our clients</h2>
+          <h2 className="clientstitle">More our clients</h2>
           <div className="logos">
             <img
               src={require("./images/Teknosolutions-logo.png")}

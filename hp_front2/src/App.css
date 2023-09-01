@@ -222,20 +222,13 @@ WORKS LOGOS  //
 */
 
 .logocont {
-  background: rgb(246, 106, 151);
-  background: linear-gradient(
-    0deg,
-    rgb(248, 168, 165) 0%,
-    rgba(255, 255, 255, 1) 4%,
-    rgba(255, 255, 255, 1) 95%,
-    rgb(253, 208, 166) 97%
-  );
-  margin-top: 40px;
+  background: rgb(249, 244, 246);
+
   flex-wrap: wrap;
 }
 
-.logocont-title {
-  text-align: center;
+.clientstitle {
+  padding-top: 30px;
 }
 
 .logocont img {
@@ -246,8 +239,6 @@ WORKS LOGOS  //
 }
 
 .logos {
-  margin-top: 7%;
-  padding-bottom: 40px;
 }
 
 /* 
