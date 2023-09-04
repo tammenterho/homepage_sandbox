@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "comment")
+@Table(name = "table_comments")
 public class Comment {
 	@Id
 	private int id;
