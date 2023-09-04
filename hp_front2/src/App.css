@@ -239,7 +239,7 @@ WORKS LOGOS  //
 }
 
 .logos {
-  text-align: center;
+  text-align: center; /* works also for img and element */
 }
 
 /* 
