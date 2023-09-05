@@ -11,13 +11,10 @@ import com.hp_back2.hp_back2.repo.CommentRepo;
 @RestController
 public class CommentController {
 	
-	private final CommentRepo commentRepo;
+	@Autowired
+	private CommentRepo commentRepo;
 	
-	 @Autowired
-	    public CommentController(CommentRepo commentRepo) {
-	        this.commentRepo = commentRepo;
-	    }
-	 
+
 	 @GetMapping("/comments")
 	    public List<Comment> getAllComments() {
 	        return commentRepo.findAll();
