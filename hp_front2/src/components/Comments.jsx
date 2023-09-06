@@ -17,7 +17,9 @@ export function Comments() {
       <h1>Comments</h1>
       <ul>
         {comments.map((comment) => (
-          <li key={comment.id}>{comment.text}</li>
+          <li key={comment.id}>
+            {comment.name} {comment.comment}
+          </li>
         ))}
       </ul>
     </>
