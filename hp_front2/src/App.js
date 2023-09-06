@@ -7,6 +7,7 @@ import Header from "./components/header";
 import TextField from "@mui/material/TextField";
 import { Button, Grid } from "@mui/material";
 import MoreClients from "./components/moreClients";
+import { Comments } from "./components/Comments.jsx";
 
 function App() {
   return (
@@ -105,6 +106,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Comments />
     </div>
   );
 }
