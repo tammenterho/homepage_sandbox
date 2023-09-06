@@ -3,6 +3,8 @@ package com.hp_back2.hp_back2;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,8 +32,13 @@ public class CommentController {
 	 }
 	 
 	 @DeleteMapping("/comments/{id}")
-	 void deleteComment(@PathVariable Integer id) {
-		 commentRepo.deleteById(id);
+	 public ResponseEntity<String> deleteComment(@PathVariable Integer id) {
+	     try {
+	         commentRepo.deleteById(id);
+	         return new ResponseEntity<>("Comment deleted successfully", HttpStatus.OK);
+	     } catch (Exception e) {
+	         return new ResponseEntity<>("Failed to delete comment", HttpStatus.INTERNAL_SERVER_ERROR);
+	     }
 	 }
 
 }
