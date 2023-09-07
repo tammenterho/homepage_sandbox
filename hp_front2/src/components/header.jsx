@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./../App.css";
+import { Link as Slink } from "react-router-dom";
+import { Comments } from "./Comments";
 
 export default function Header() {
   const [navVisible, setNavVisible] = useState(false);
@@ -22,7 +24,9 @@ export default function Header() {
         <Link to="#contact">
           <p>contact</p>
         </Link>
-        <a href="/messages">messages</a>
+        <Link to="/comments">
+          <p>messages</p>
+        </Link>
         <div className="hamburger" onClick={toggleNav}>
           <span className="bar"></span>
           <span className="bar"></span>
@@ -41,7 +45,6 @@ export default function Header() {
         </Link>
         <a href="/messages">messages</a>
       </div>
-
       <p className="slogan">
         At Cheeky Social Sorbet, we're not your average digital marketing agency
         – we're the zing in your online presence! Just like a refreshing sorbet

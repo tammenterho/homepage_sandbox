@@ -6,9 +6,6 @@ import AboutUs from "./components/aboutUs";
 import Header from "./components/header";
 import MoreClients from "./components/moreClients";
 import { Contact } from "./components/Contact";
-import { Routes } from "react-router-dom";
-import { Route } from "react-router-dom";
-import { Comments } from "./components/Comments.jsx";
 
 function App() {
   return (
@@ -27,10 +24,6 @@ function App() {
         <AboutUs />
         <Contact />
       </div>
-      <Routes>
-        <Route path="/comments" element={<Comments />} />
-        <Route path="/" element={<App />} />
-      </Routes>
     </div>
   );
 }
