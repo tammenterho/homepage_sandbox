@@ -27,11 +27,13 @@ public class CommentController {
 	        return commentRepo.findAll();
 	    }
 	 
+	@CrossOrigin(origins = "http://localhost:3000")
 	 @PostMapping("/comments")
 	 Comment newComment(@RequestBody Comment newComment) {
 		 return commentRepo.save(newComment);
 	 }
 	 
+	 @CrossOrigin(origins = "http://localhost:3000")
 	 @DeleteMapping("/comments/{id}")
 	 public ResponseEntity<String> deleteComment(@PathVariable Integer id) {
 	     try {
