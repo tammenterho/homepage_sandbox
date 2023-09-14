@@ -43,7 +43,7 @@ export default function Header() {
         <Link to="#contact">
           <p>contact</p>
         </Link>
-        <a href="/messages">messages</a>
+        <a href="/comments">messages</a>
       </div>
       <p className="slogan">
         At Cheeky Social Sorbet, we're not your average digital marketing agency

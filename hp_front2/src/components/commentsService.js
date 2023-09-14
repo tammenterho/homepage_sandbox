@@ -13,5 +13,10 @@ export const deleteComment = async (id) => {
   });
 };
 
+export const createComment = async (comment) => {
+  axios.create = await axios.create(baseUrl);
+  return console.log("created");
+};
+
 // eslint-disable-next-line import/no-anonymous-default-export
-export default { getAll: getAll, delete: deleteComment };
+export default { getAll: getAll, delete: deleteComment, create: createComment };

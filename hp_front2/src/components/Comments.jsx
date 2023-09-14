@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { getAll, deleteComment } from "./commentsService";
-import { Alert, Button } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 
 export function deleteCommentId(id) {
@@ -25,6 +25,12 @@ export function Comments() {
       <Link to="/">
         <Button>Return</Button>
       </Link>
+      <br></br>
+      <TextField required label={"Name"} />
+      <br></br>
+      <TextField required label={"Comment"} multiline rows={6} />
+      <br></br>
+      <Button>POST</Button>
       <ul>
         {comments.map((comment) => (
           <li key={comment.id}>
