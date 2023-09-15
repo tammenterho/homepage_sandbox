@@ -51,6 +51,12 @@ export function Comments() {
     window.location.reload(false);
   }
 
+  function cancelEdit() {
+    setEditMode(false);
+    setName("");
+    setComment("");
+  }
+
   return (
     <>
       <h1>Comments</h1>
@@ -108,6 +114,9 @@ export function Comments() {
             onClick={() => saveComment(comment)}
           >
             SAVE
+          </Button>
+          <Button variant="outline" onClick={() => cancelEdit()}>
+            CANCEL
           </Button>
         </>
       )}
