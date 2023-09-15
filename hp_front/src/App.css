@@ -65,3 +65,11 @@ body {
   font-weight: 100;
   font-style: normal;
 }
+
+.email-link {
+  padding: none;
+  border: none;
+  background: none;
+  font-family: "input-mono", monospace;
+  font-weight: 100;
+}

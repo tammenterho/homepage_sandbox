@@ -128,7 +128,12 @@ export default function App() {
         </div>
       </div>
       <div className="email">
-        <p>terho.mikko@gmail.com</p>
+        <button
+          className="email-link"
+          onClick={() => (window.location = "mailto:terho.mikko@gmail.com")}
+        >
+          terho.mikko@gmail.com
+        </button>
       </div>
     </div>
   );
