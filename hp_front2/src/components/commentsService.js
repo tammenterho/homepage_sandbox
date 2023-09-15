@@ -23,5 +23,19 @@ export const createComment = async (name, comment) => {
   }
 };
 
+export const modifyComment = async (id, name, comment) => {
+  try {
+    const response = await axios.put(`${baseUrl}/${id}`, { name, comment });
+    return response.data;
+  } catch (error) {
+    console.log("error editing comment", error);
+  }
+};
+
 // eslint-disable-next-line import/no-anonymous-default-export
-export default { getAll: getAll, delete: deleteComment, create: createComment };
+export default {
+  getAll: getAll,
+  delete: deleteComment,
+  create: createComment,
+  modify: modifyComment,
+};

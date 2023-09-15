@@ -14,6 +14,7 @@ export function Comments() {
   const { status, error, data: comments } = useQuery(["comments"], getAll); // Käytä queryFn:ään suoraan getAll-funktiota
   const [name, setName] = useState("");
   const [comment, setComment] = useState("");
+  const [editMode, setEditMode] = useState(false);
 
   if (status === "loading") {
     return <div>Ladataan...</div>;
@@ -30,6 +31,12 @@ export function Comments() {
     window.location.reload(false);
   }
 
+  function editComment(commentToEdit) {
+    setEditMode(true);
+    setName(commentToEdit.name);
+    setComment(commentToEdit.comment);
+  }
+
   return (
     <>
       <h1>Comments</h1>
@@ -37,33 +44,61 @@ export function Comments() {
         <Button>Return</Button>
       </Link>
       <br></br>
-      <TextField
-        id="input-name"
-        required
-        label={"Name"}
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <br></br>
-      <TextField
-        id="input-comment"
-        required
-        label={"Comment"}
-        multiline
-        rows={6}
-        value={comment}
-        onChange={(e) => setComment(e.target.value)}
-      />
-      <br></br>
-      <Button onClick={() => postComment()}>POST</Button>
+      {!editMode ? (
+        <>
+          <TextField
+            id="input-name"
+            required
+            label={"Name"}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <br></br>
+          <TextField
+            id="input-comment"
+            required
+            label={"Comment"}
+            multiline
+            rows={6}
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+          />
+          <br></br>
+          <Button onClick={() => postComment()}>POST</Button>{" "}
+        </>
+      ) : (
+        <>
+          <TextField
+            id="input-name"
+            required
+            label={"Name"}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <br></br>
+          <TextField
+            id="input-comment"
+            required
+            label={"Comment"}
+            multiline
+            rows={6}
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+          />
+          <br></br>
+          <Button color="success" variant="contained">
+            SAVE
+          </Button>
+        </>
+      )}
       <ul>
         {comments.map((comment) => (
           <li key={comment.id}>
-            {comment.name} {comment.comment}{" "}
+            {comment.name} {comment.comment} {comment.id}
             <Button color="error" onClick={() => deleteCommentId(comment.id)}>
               Delete
             </Button>
-            <Button>Edit</Button>
+            <Button onClick={() => editComment(comment)}>Edit</Button>
           </li>
         ))}
       </ul>
