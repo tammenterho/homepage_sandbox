@@ -25,7 +25,9 @@ export const createComment = async (name, comment) => {
 
 export const modifyComment = async (id, name, comment) => {
   try {
+    console.log(id);
     const response = await axios.put(`${baseUrl}/${id}`, { name, comment });
+    console.log(`Modified comment with id ${id}`);
     return response.data;
   } catch (error) {
     console.log("error editing comment", error);

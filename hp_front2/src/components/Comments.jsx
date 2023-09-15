@@ -1,5 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
-import { getAll, deleteComment, createComment } from "./commentsService";
+import {
+  getAll,
+  deleteComment,
+  createComment,
+  modifyComment,
+} from "./commentsService";
 import { Button, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -33,8 +38,13 @@ export function Comments() {
 
   function editComment(commentToEdit) {
     setEditMode(true);
+    console.log(commentToEdit.id);
     setName(commentToEdit.name);
     setComment(commentToEdit.comment);
+  }
+
+  function saveComment(comment) {
+    modifyComment(comment.id, name, comment);
   }
 
   return (
@@ -86,7 +96,11 @@ export function Comments() {
             onChange={(e) => setComment(e.target.value)}
           />
           <br></br>
-          <Button color="success" variant="contained">
+          <Button
+            color="success"
+            variant="contained"
+            onClick={() => saveComment(comment)}
+          >
             SAVE
           </Button>
         </>
