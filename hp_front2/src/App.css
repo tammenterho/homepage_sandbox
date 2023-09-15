@@ -322,5 +322,9 @@ CONTACT  //
   margin: auto;
 }
 
-.textfield {
+.delete-icon {
+  vertical-align: bottom;
+}
+.edit-icon {
+  vertical-align: bottom;
 }

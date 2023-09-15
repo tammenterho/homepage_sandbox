@@ -9,6 +9,7 @@ import { Button, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
 
 export function deleteCommentId(id) {
   console.log(id);
@@ -115,12 +116,16 @@ export function Comments() {
           <li key={comment.id}>
             {comment.name} {comment.comment} {comment.id}
             <DeleteIcon
+              className="delete-icon"
               color="error"
               onClick={() => deleteCommentId(comment.id)}
             >
               Delete
             </DeleteIcon>
-            <Button onClick={() => editComment(comment)}>Edit</Button>
+            <EditIcon
+              className="edit-icon"
+              onClick={() => editComment(comment)}
+            ></EditIcon>
           </li>
         ))}
       </ul>
