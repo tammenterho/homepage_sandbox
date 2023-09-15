@@ -8,6 +8,7 @@ import {
 import { Button, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 export function deleteCommentId(id) {
   console.log(id);
@@ -19,6 +20,7 @@ export function Comments() {
   const { status, error, data: comments } = useQuery(["comments"], getAll); // Käytä queryFn:ään suoraan getAll-funktiota
   const [name, setName] = useState("");
   const [comment, setComment] = useState("");
+  const [id, setId] = useState("");
   const [editMode, setEditMode] = useState(false);
 
   if (status === "loading") {
@@ -38,13 +40,14 @@ export function Comments() {
 
   function editComment(commentToEdit) {
     setEditMode(true);
-    console.log(commentToEdit.id);
+    setId(commentToEdit.id);
     setName(commentToEdit.name);
     setComment(commentToEdit.comment);
   }
 
   function saveComment(comment) {
-    modifyComment(comment.id, name, comment);
+    modifyComment(id, name, comment);
+    window.location.reload(false);
   }
 
   return (
@@ -74,7 +77,9 @@ export function Comments() {
             onChange={(e) => setComment(e.target.value)}
           />
           <br></br>
-          <Button onClick={() => postComment()}>POST</Button>{" "}
+          <Button variant="contained" onClick={() => postComment()}>
+            POST
+          </Button>{" "}
         </>
       ) : (
         <>
@@ -109,9 +114,12 @@ export function Comments() {
         {comments.map((comment) => (
           <li key={comment.id}>
             {comment.name} {comment.comment} {comment.id}
-            <Button color="error" onClick={() => deleteCommentId(comment.id)}>
+            <DeleteIcon
+              color="error"
+              onClick={() => deleteCommentId(comment.id)}
+            >
               Delete
-            </Button>
+            </DeleteIcon>
             <Button onClick={() => editComment(comment)}>Edit</Button>
           </li>
         ))}
