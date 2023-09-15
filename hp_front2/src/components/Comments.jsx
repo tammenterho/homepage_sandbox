@@ -7,15 +7,13 @@ import { useState } from "react";
 export function deleteCommentId(id) {
   console.log(id);
   deleteComment(id);
-}
-/*
-export function postComment(data) {
-  const [name, setName] = useState("");
+  window.location.reload(false);
 }
 
-*/
 export function Comments() {
   const { status, error, data: comments } = useQuery(["comments"], getAll); // Käytä queryFn:ään suoraan getAll-funktiota
+  const [name, setName] = useState("");
+  const [comment, setComment] = useState("");
 
   if (status === "loading") {
     return <div>Ladataan...</div>;
@@ -25,6 +23,13 @@ export function Comments() {
     return <div>Tapahtui virhe: {error.message}</div>;
   }
 
+  function postComment() {
+    createComment(name, comment);
+    setName("");
+    setComment("");
+    window.location.reload(false);
+  }
+
   return (
     <>
       <h1>Comments</h1>
@@ -32,7 +37,13 @@ export function Comments() {
         <Button>Return</Button>
       </Link>
       <br></br>
-      <TextField id="input-name" required label={"Name"} />
+      <TextField
+        id="input-name"
+        required
+        label={"Name"}
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
       <br></br>
       <TextField
         id="input-comment"
@@ -40,9 +51,11 @@ export function Comments() {
         label={"Comment"}
         multiline
         rows={6}
+        value={comment}
+        onChange={(e) => setComment(e.target.value)}
       />
       <br></br>
-      {/*<Button onClick={() => postComment()}>POST</Button>}*/}
+      <Button onClick={() => postComment()}>POST</Button>
       <ul>
         {comments.map((comment) => (
           <li key={comment.id}>

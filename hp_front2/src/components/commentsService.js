@@ -13,9 +13,14 @@ export const deleteComment = async (id) => {
   });
 };
 
-export const createComment = async (comment) => {
-  axios.create = await axios.create(baseUrl);
-  return console.log("created");
+export const createComment = async (name, comment) => {
+  try {
+    const response = await axios.post(baseUrl, { name, comment });
+    console.log("Comment created:", response.data);
+    return response.data;
+  } catch (error) {
+    console.error("Error creating comment:", error);
+  }
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
